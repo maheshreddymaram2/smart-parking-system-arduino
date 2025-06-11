@@ -46,7 +46,7 @@ This project demonstrates a **Smart Parking System** using Arduino Uno and ultra
 
 ## 📸 Screenshots
 
-You can find simulation visuals in files:
+You can find simulation visuals inside the `screenshots/` folder:
 - `components.png`: Circuit layout in Tinkercad
 - `lcd_off.png`:at power off
 - `startup_lcd_message.png`: "Smart Parking" message at power on
