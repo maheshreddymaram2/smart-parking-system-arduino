@@ -14,19 +14,25 @@ This project demonstrates a **Smart Parking System** using Arduino Uno and ultra
 
 ---
 
+## 🔗 Live Demo
+
+[🔗 View Live Simulation on Tinkercad](https://www.tinkercad.com/things/fcSQ2xv0YGk-smart-parking-system)
+
+---
+
 ## 🛠️ Components Used
 
-| Component             | Quantity |
-|-----------------------|----------|
-| Arduino Uno R3        | 1        |
+| Component                  | Quantity |
+|---------------------------|----------|
+| Arduino Uno R3            | 1        |
 | Ultrasonic Sensor (HC-SR04) | 3        |
-| Green LEDs            | 3        |
-| Red LEDs              | 3        |
-| Resistors (220Ω)      | 6        |
-| Breadboard (Small)    | 1        |
-| Servo Motor           | 2        |
-| I2C LCD Display       | 1        |
-| Power Supply          | 1        |
+| Green LEDs                | 3        |
+| Red LEDs                  | 3        |
+| Resistors (220Ω)          | 6        |
+| Breadboard (Small)        | 1        |
+| Servo Motor               | 2        |
+| I2C LCD Display           | 1        |
+| Power Supply              | 1        |
 
 ---
 
@@ -34,12 +40,12 @@ This project demonstrates a **Smart Parking System** using Arduino Uno and ultra
 
 1. Each **slot has an ultrasonic sensor** to detect if a car is parked.
 2. If distance > 10cm, slot is **Empty**:
-   - Green LED ON
-   - Entry gate opens
+   - Green LED ON  
+   - Entry gate opens  
    - LCD: `Slot X Empty`, `Car X coming`
 3. If distance ≤ 10cm, slot is **Full**:
-   - Red LED ON
-   - Exit gate opens
+   - Red LED ON  
+   - Exit gate opens  
    - LCD: `Slot X Full`, `Car X Ready to Leave` (scrolls message)
 
 ---
@@ -47,14 +53,14 @@ This project demonstrates a **Smart Parking System** using Arduino Uno and ultra
 ## 📸 Screenshots
 
 You can find simulation visuals inside the `screenshots/` folder:
-- `components.png`: Circuit layout in Tinkercad
-- `lcd_off.png`:at power off
-- `startup_lcd_message.png`: "Smart Parking" message at power on
-- `slot1_full.png`: Car parked view 1
-- `slot1_empty.png`: Empty slot 1 with green LED
-- `slot2_full.png`: Car parked view 2
-- `slot2_empty.png`: Empty slot 2 with green LED
-- `slot3_full.png`: Car parked view 3
+- `components.png`: Circuit layout in Tinkercad  
+- `lcd_off.png`: At power off  
+- `startup_lcd_message.png`: "Smart Parking" message at power on  
+- `slot1_full.png`: Car parked view 1  
+- `slot1_empty.png`: Empty slot 1 with green LED  
+- `slot2_full.png`: Car parked view 2  
+- `slot2_empty.png`: Empty slot 2 with green LED  
+- `slot3_full.png`: Car parked view 3  
 - `slot3_empty.png`: Empty slot 3 with green LED
 
 ---
@@ -75,8 +81,3 @@ long getDistance(int trigPin, int echoPin) {
   long duration = pulseIn(echoPin, HIGH);
   return duration * 0.034 / 2;
 }
-
-## 🔗 Live Demo
-
-[🔗 View Live Simulation on Tinkercad](https://www.tinkercad.com/things/fcSQ2xv0YGk-smart-parking-system)
-
