@@ -75,3 +75,8 @@ long getDistance(int trigPin, int echoPin) {
   long duration = pulseIn(echoPin, HIGH);
   return duration * 0.034 / 2;
 }
+
+## 🔗 Live Demo
+
+[🔗 View Live Simulation on Tinkercad](https://www.tinkercad.com/things/fcSQ2xv0YGk-smart-parking-system)
+
