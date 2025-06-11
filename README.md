@@ -81,7 +81,7 @@ long getDistance(int trigPin, int echoPin) {
   long duration = pulseIn(echoPin, HIGH);
   return duration * 0.034 / 2;
 }
-
+---
 ## 📬 Contact Me
 
 Feel free to reach out if you have any questions or want to connect:
